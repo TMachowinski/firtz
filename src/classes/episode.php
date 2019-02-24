@@ -282,6 +282,7 @@
 				$item = $this->parseConfig($main,$ITEMFILE,$feedattrs,$item);
 			} else {
 				/* parse the auphonic json file */
+				$item=array();
 				$item = $this->parseAuphonic($main,$ITEMFILE,$feedattrs);
 				if ($item===false) {
 					$this->item=array();
